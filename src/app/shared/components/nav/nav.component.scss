@@ -1,0 +1,29 @@
+.nav{
+  width: 100%;
+  position: fixed;
+  font-family: 'Montserrat', serif bold;
+}
+
+.grid{
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  align-items: center;
+
+
+
+  .menu{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    vertical-align: start;
+    text-align: right;
+  }
+}
+
+// .grid > div{
+//   background: red;
+// }
+
+// .grid > :nth-child(odd){
+//   background-color: #666;
+// }
