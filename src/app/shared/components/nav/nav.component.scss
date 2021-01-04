@@ -1,8 +1,9 @@
 .nav{
   width: 100%;
   position: fixed;
-  font-family: 'Montserrat', serif bold;
-}
+  font-family: 'Montserrat', sans-serif;
+  top: 50px;
+
 
 .grid{
   color: #ffffff;
@@ -17,6 +18,7 @@
     grid-template-columns: 10fr 1fr;
     vertical-align: start;
     text-align: right;
+    top: 0;
   }
 }
 

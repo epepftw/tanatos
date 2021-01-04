@@ -1,5 +1,34 @@
 .banner {
   background-size: cover;
-  height: 100vh;
-  font-family: 'Open-Sans Bold', sans-serif bold;
+  height: 100%;
+  color: #ffffff;
+  background-position: center;
+  width: 100%;
+  
+
+  .ld-text{
+    text-align: center;
+    position: relative;
+    height: auto;
+    top: 40%;
+    align-items: center;
+    width: 50%;
+  
+
+    h1{
+      font-weight: 900;
+      font-size: 70px;
+    }
+  }
+
+  h4{
+    font-weight: 600;
+    font-size: 25px;
+    
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
 }

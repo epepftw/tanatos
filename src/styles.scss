@@ -1,5 +1,31 @@
-
+body{
+  font-family: 'Open Sans', sans-serif;
+}
 
 .colored {
-  color: red !important;
+  color: #f7600e !important;
+}
+
+.btn-a{
+  border: 1px solid white;
+  border-radius: 8px;
+  background: transparent;
+  padding: 10px 60px;
+  margin: 10px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+.btn-a:hover{
+  border: 1px solid #f7600e;
+  background-color: #f7600e;
+  transition: 0.5s;
+  
+}
+
+.op-color{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(42, 51, 56, 0.856);
 }

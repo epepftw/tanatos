@@ -131,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "tanatos-studio"
+  "defaultProject": "tanatos-studio",
+  "cli": {
+    "analytics": "3d7d48e1-856e-4a4f-a45b-2babc4f254ff"
+  }
 }

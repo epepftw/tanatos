@@ -10,7 +10,7 @@ export class BannerComponent implements OnInit {
   @Input() background: string = "";
   @Input() heading: string = "";
   @Input() subtitle: string = "";
-  @Input() height: number = 500;
+  @Input() height: number = 100;
 
   constructor() { }
 
