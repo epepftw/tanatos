@@ -4,3 +4,14 @@
 [subtitle]="home.subtitle">
 </app-banner>
 
+<div class="container">
+    <div class="row no-gutters">
+        <div class="col-lg-3" *ngFor="let s of services">
+            <app-services 
+            [icon]="s.acf.icon"
+            [title]="s.acf.title"
+            [description]="s.acf.description">
+            </app-services>
+        </div>
+    </div>
+</div>

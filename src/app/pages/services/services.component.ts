@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-services',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./services.component.scss']
 })
 export class ServicesComponent implements OnInit {
+  @Input() icon: string = "";
+  @Input() title: string = "";
+  @Input() description: string = "";
 
   constructor() { }
 
@@ -13,3 +16,5 @@ export class ServicesComponent implements OnInit {
   }
 
 }
+
+

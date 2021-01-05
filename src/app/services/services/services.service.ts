@@ -5,11 +5,10 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class HomeService {
+export class ServicesService {
   constructor(private _http: HttpClient) { }
 
-  get_home() {
-    return this._http.get(`${environment.api}${environment.home}`)
+  get_services() {
+    return this._http.get(`${environment.api}${environment.services}`)
   }
 }
-

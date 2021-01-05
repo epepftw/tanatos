@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  home: 'http://dashboard.evhin.xyz/wp-json/wp/v2/pages/19'
+  api: 'http://dashboard.evhin.xyz/wp-json/wp/v2',
+  home: '/pages/19',
+  services: '/services/'
 };
 
 /*
