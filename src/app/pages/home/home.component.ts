@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { HomeService } from 'src/app/services/home/home.service';
 import { ServicesService } from 'src/app/services/services/services.service';
+import { WorksService } from 'src/app/services/works/works.service';
 
 @Component({
   selector: 'app-home',
@@ -10,12 +11,14 @@ import { ServicesService } from 'src/app/services/services/services.service';
 export class HomeComponent implements OnInit {
   home: any = {};
   services: any[] = [];
+  works: any[] = [];
 
-  constructor(private _home: HomeService, private _services: ServicesService) { }
+  constructor(private _home: HomeService, private _services: ServicesService, private _works: WorksService) { }
 
   ngOnInit(): void {
     this.getHome();
     this.getServices();
+    this.getWorks();
   }
 
   getHome() {
@@ -36,4 +39,12 @@ export class HomeComponent implements OnInit {
     )
   }
 
+  getWorks() {
+    this._works.get_works().subscribe(
+      (data: any) => {
+        this.works = data;
+        console.log('#WORKS', this.works)
+      }
+    )
+  }
 }

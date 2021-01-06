@@ -1,0 +1,62 @@
+
+
+.photo{
+    height: 360px;
+    width: 360px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .image-overlay-blur{
+        backdrop-filter: blur(5px);
+    }
+
+    .image-overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .image-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(252, 99, 10, 0.795);
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+        border-radius: 20px;
+
+        .image-title{
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .image-description {
+            margin: 0 40px;
+            line-height: 26px;
+            margin-top: 15px;
+        }
+    }
+
+    .image-overlay:hover{
+        opacity: 1;          
+    }
+
+    .image-overlay:hover > * {
+        transform: translateY(0);
+    }
+}

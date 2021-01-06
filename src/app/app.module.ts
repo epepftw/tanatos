@@ -10,6 +10,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { NavComponent } from './shared/components/nav/nav.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { BannerComponent } from './shared/components/banner/banner.component';
+import { NewsletterComponent } from './shared/components/newsletter/newsletter.component';
+import { WorksComponent } from './pages/works/works.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { BannerComponent } from './shared/components/banner/banner.component';
     ContactComponent,
     NavComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    NewsletterComponent,
+    WorksComponent
   ],
   imports: [
     BrowserModule,

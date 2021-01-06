@@ -1,8 +1,9 @@
 .nav{
   width: 100%;
-  position: fixed;
+  position: absolute;
   font-family: 'Montserrat', sans-serif;
   top: 50px;
+  z-index: 9;
 }
 
 .grid{

@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   api: 'http://dashboard.evhin.xyz/wp-json/wp/v2',
   home: '/pages/19',
-  services: '/services/'
+  services: '/services/',
+  works: '/works'
 };
 
 /*

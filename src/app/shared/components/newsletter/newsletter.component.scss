@@ -1,0 +1,33 @@
+.news-bg{
+    background: url('/assets/images/tablet.png');
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+
+
+    .news-div{
+        width: 100%;
+        height: 250px;
+        text-align: center;
+
+        .news-cont{
+          padding: 100px 0;
+        }
+
+        input, button{
+            margin: 0 15px;
+        }
+
+        input{
+            width: 562px;
+            height: 50px;
+            border-radius: 10px;
+            font-weight: 300;
+            padding:  0 0 0 20px;
+        }
+
+        button{
+            padding: 12px 80px;
+        }
+    }
+}

@@ -15,3 +15,32 @@
         </div>
     </div>
 </div>
+
+<app-newsletter></app-newsletter>
+
+
+<!-- <section class="container works-con">
+    <div class=".captions">
+        <h2>{{ home.work_title }}</h2>
+        <p>{{ home.work_description }}</p>
+        <app-works>
+
+        </app-works>
+    </div>
+</section> -->
+<div class="container works-cont">
+    <div class="captions">
+        <h2 [innerHTML]="home.work_title"></h2>
+        <p>{{ home.work_description }}</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let w of works">
+            <app-works
+            [image]="w.acf.image"
+            [title]="w.acf.title"
+            [description]="w.acf.description">
+            </app-works>
+        </div>
+    </div>
+    
+</div>
