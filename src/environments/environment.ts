@@ -7,7 +7,8 @@ export const environment = {
   api: 'http://dashboard.evhin.xyz/wp-json/wp/v2',
   home: '/pages/19',
   services: '/services/',
-  works: '/works'
+  works: '/works',
+  team: '/team'
 };
 
 /*

@@ -12,6 +12,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { BannerComponent } from './shared/components/banner/banner.component';
 import { NewsletterComponent } from './shared/components/newsletter/newsletter.component';
 import { WorksComponent } from './pages/works/works.component';
+import { TeamComponent } from './pages/team/team.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { WorksComponent } from './pages/works/works.component';
     FooterComponent,
     BannerComponent,
     NewsletterComponent,
-    WorksComponent
+    WorksComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,

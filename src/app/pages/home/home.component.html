@@ -28,7 +28,7 @@
         </app-works>
     </div>
 </section> -->
-<div class="container works-cont">
+<div class="container cont">
     <div class="captions">
         <h2 [innerHTML]="home.work_title"></h2>
         <p>{{ home.work_description }}</p>
@@ -42,5 +42,24 @@
             </app-works>
         </div>
     </div>
-    
 </div>
+
+<div class="container cont">
+    <div class="captions">
+        <h2 [innerHTML]="home.team_title"></h2>
+        <p>{{ home.team_description }}</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-3" *ngFor="let t of team">
+            <app-team
+            [image]="t.acf.image"
+            [name]="t.acf.name"
+            [description]="t.acf.description"
+            [facebook]="t.acf.facebook"
+            [twitter]="t.acf.twitter"
+            [google]="t.acf.google">
+            </app-team>
+        </div>        
+    </div>
+</div>
+

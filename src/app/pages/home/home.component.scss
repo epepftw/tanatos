@@ -1,4 +1,4 @@
-.works-cont{
+.cont{
     text-align: center;
     padding: 100px 0;
 
@@ -16,5 +16,14 @@
         margin: auto;
         font-weight: 300;
         padding-bottom: 100px;
+    }
+
+    .radio-slider{
+        margin: auto;
+        
+        input{
+            margin: 0 5px;
+            height: 10px;
+        }
     }
 }
