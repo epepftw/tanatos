@@ -19,15 +19,8 @@
 <app-newsletter></app-newsletter>
 
 
-<!-- <section class="container works-con">
-    <div class=".captions">
-        <h2>{{ home.work_title }}</h2>
-        <p>{{ home.work_description }}</p>
-        <app-works>
 
-        </app-works>
-    </div>
-</section> -->
+
 <div class="container cont">
     <div class="captions">
         <h2 [innerHTML]="home.work_title"></h2>
@@ -43,6 +36,39 @@
         </div>
     </div>
 </div>
+
+<!-- <div class="item-holder">
+    <div class="op3-color">
+        <div class="container-fluid item" *ngFor="let test of testimonial">
+            
+        </div>
+    </div>
+</div> -->
+
+<div class="testimonial-section">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner op-color">
+          <div class="carousel-item" *ngFor="let test of testimonial; let i = index" [ngClass]="i == 1 ? 'active' : ''">
+                <app-testimonial
+                [image]="test.acf.image"
+                [description]="test.acf.description"
+                [name]="test.acf.name">
+                </app-testimonial>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+</div>
+
+
+
 
 <div class="container cont">
     <div class="captions">
@@ -63,3 +89,12 @@
     </div>
 </div>
 
+
+<div class="container cont">
+    <div class="captions">
+        <h2 [innerHTML]="home.contact_title"></h2>
+        <p>{{ home.contact_description }}</p>
+    </div>
+    <app-contact>
+    </app-contact>
+</div>

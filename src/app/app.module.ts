@@ -13,6 +13,7 @@ import { BannerComponent } from './shared/components/banner/banner.component';
 import { NewsletterComponent } from './shared/components/newsletter/newsletter.component';
 import { WorksComponent } from './pages/works/works.component';
 import { TeamComponent } from './pages/team/team.component';
+import { TestimonialComponent } from './pages/testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { TeamComponent } from './pages/team/team.component';
     BannerComponent,
     NewsletterComponent,
     WorksComponent,
+    TestimonialComponent,
     TeamComponent
+
   ],
   imports: [
     BrowserModule,

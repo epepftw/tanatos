@@ -8,6 +8,7 @@ export const environment = {
   home: '/pages/19',
   services: '/services/',
   works: '/works',
+  testimonial: '/testimonial',
   team: '/team'
 };
 

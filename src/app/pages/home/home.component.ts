@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { HomeService } from 'src/app/services/home/home.service';
 import { ServicesService } from 'src/app/services/services/services.service';
 import { TeamService } from 'src/app/services/team/team.service';
+import { TestimonialService } from 'src/app/services/testimonial/testimonial.service';
 import { WorksService } from 'src/app/services/works/works.service';
 
 @Component({
@@ -13,14 +14,21 @@ export class HomeComponent implements OnInit {
   home: any = {};
   services: any[] = [];
   works: any[] = [];
+  testimonial: any[] = [];
   team: any[] = [];
 
-  constructor(private _home: HomeService, private _services: ServicesService, private _works: WorksService, private _team: TeamService) { }
+
+  constructor(private _home: HomeService,
+              private _services: ServicesService,
+              private _works: WorksService,
+              private _testimonial: TestimonialService,
+              private _team: TeamService) { }
 
   ngOnInit(): void {
     this.getHome();
     this.getServices();
     this.getWorks();
+    this.getTestimonial();
     this.getTeam();
   
   }
@@ -52,6 +60,21 @@ export class HomeComponent implements OnInit {
     )
   }
 
+
+  getTestimonial() {
+    console.log('ahah')
+    this._testimonial.get_testimonial().subscribe(
+      (data: any) => {
+        this.testimonial = data;
+        console.log('#Testimonial', this.testimonial)
+      },
+      error => {
+        console.log('Error', error)
+      }
+    )
+  }
+
+
   getTeam() {
     this._team.get_team().subscribe(
       (data: any) => {
@@ -60,4 +83,6 @@ export class HomeComponent implements OnInit {
       }
     )
   }
+
+  
 }
