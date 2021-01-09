@@ -3,6 +3,7 @@
 [heading]="home.heading"
 [subtitle]="home.subtitle">
 </app-banner>
+<!--BANNER END-->
 
 <div class="container">
     <div class="row no-gutters">
@@ -15,9 +16,10 @@
         </div>
     </div>
 </div>
+<!--SERVICES END-->
 
 <app-newsletter></app-newsletter>
-
+<!-- NEWSLETTER END -->
 
 
 
@@ -35,15 +37,11 @@
             </app-works>
         </div>
     </div>
+    <button class="btn-w">SHOW MORE</button>
 </div>
+<!--WORK END-->
 
-<!-- <div class="item-holder">
-    <div class="op3-color">
-        <div class="container-fluid item" *ngFor="let test of testimonial">
-            
-        </div>
-    </div>
-</div> -->
+
 
 <div class="testimonial-section">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -67,7 +65,7 @@
       </div>
 </div>
 
-
+<!--TESTIMONIAL END-->>
 
 
 <div class="container cont">
@@ -89,12 +87,15 @@
     </div>
 </div>
 
+<!--TEAM END-->>
 
-<div class="container cont">
-    <div class="captions">
-        <h2 [innerHTML]="home.contact_title"></h2>
-        <p>{{ home.contact_description }}</p>
+<div class="contact">
+    <div class="container-fluid cont op-color">
+            <div class="captions">
+                <h2 [innerHTML]="home.contact_title"></h2>
+                <p>{{ home.contact_description }}</p>
+            <app-contact>
+            </app-contact>       
+        </div>
     </div>
-    <app-contact>
-    </app-contact>
 </div>

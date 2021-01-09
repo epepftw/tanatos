@@ -43,6 +43,25 @@ body{
   color: #f7600e;
 }
 
+.btn-w{
+  border: 1px solid #d8d9db;
+  border-radius: 8px;
+  background: transparent;
+  padding: 10px 60px;
+  margin: 10px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 40px;
+  font-weight: 600;
+  color: #333;
+  transition: 0.35s !important;
+}
+
+.btn-w:hover{
+  border: 1px solid #f7600e;
+  background-color: #f7600e;
+  color: #fff;
+}
+
 .op-color{
   height: 100%;
   width: 100%;

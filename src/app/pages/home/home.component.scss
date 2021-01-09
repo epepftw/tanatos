@@ -5,6 +5,7 @@
     .captions{
         padding: 0;
         margin: 0;
+        height: 100%;
     }
 
     h2{
@@ -24,5 +25,13 @@
 
 .testimonial-section{
     background: url('/assets/images/lady.png');
+    background-position: center center;
+}
+
+
+
+.contact{
+    background: url('/assets/images/city.png');
+    color: #fff;
     background-position: center center;
 }
